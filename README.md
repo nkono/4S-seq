@@ -1,2 +1,6 @@
 # 4S-seq
 Strand-specific single stranded DNA sequencing designed to bacterial genome
+
+Most bacterial genomes have biased nucleotide composition, and the asymmetry is considered to be caused by a single-stranded DNA (ssDNA) deamination arising from the bacterial replication machinery. In order to evaluate the relationship experimentally, the position and frequency of ssDNA formed during replication must be verified clearly. Although many ssDNA detection technologies are existing, almost all method is developed for eukaryotic genomes. To apply to bacteria harboring less amount of DNA than eukaryote, more efficient new method is required. Therefore, we developed a novel strand-specific ssDNA sequencing method, called 4S-seq, for the bacterial genome. The developed 4S-seq method enriches ssDNA in the extracted genomic DNA by a dsDNA-specific nuclease and implements a strand-specific library using a biotin label with a customized tag. As a result, the 4S-seq enabled to calculate the ssDNA content in each strand (Watson/Crick) at each position of the genome efficiently.
+
+4Spgm.pl is a program to calculate strand bias represented as strand skew (Watson - Crick) / (Watson + Crick) using tag sequence (5’-GGGAAN8TAGGG-3’).
