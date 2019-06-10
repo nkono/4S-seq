@@ -64,7 +64,7 @@ for my $line (`cat $opts{sam}`){
     chomp($line);
     next if ($line =~ /^\@/);
     next unless($line =~ /$tagname/);
-    next if ($line =~ /XA:Z:gi/); # ignore multiple mapping
+    next if ($line =~ /XA:Z/); # ignore multiple mapping
     my @F = split(/\t/, $line);
     next if ($seen{$F[9]}); # remove PCR duplicate
 
